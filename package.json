@@ -1,0 +1,19 @@
+{
+  "name": "whatsapp-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehmetalperen/whatsapp-clone-backend.git"
+  },
+  "author": "Mehmet Nadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehmetalperen/whatsapp-clone-backend/issues"
+  },
+  "homepage": "https://github.com/mehmetalperen/whatsapp-clone-backend#readme"
+}
