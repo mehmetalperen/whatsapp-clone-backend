@@ -3,7 +3,8 @@
 // importing
 import express from "express";
 import mongoose from "mongoose";
-import Messages from "./dbMessages.js";
+import Messages from "./dbMessages.js"; //schema for the db
+
 //app config
 const app = express();
 const port = process.env.PORT || 9000;
@@ -11,7 +12,8 @@ const port = process.env.PORT || 9000;
 //middleware
 
 // db config
-const mongoodbConnectionURL = `mongodb+srv://admin:Jq7oDAr0qpikxOAx@cluster0.s7lqsix.mongodb.net/whatsappclone?retryWrites=true&w=majority`;
+const mongoodbConnectionURL = `mongodb+srv://admin:Jq7oDAr0qpikxOAx@cluster0.s7lqsix.mongodb.net/whatsappclone?retryWrites=true&w=majority`; //security risk. hide this on deployment
+
 mongoose.connect(mongoodbConnectionURL);
 
 // magic stuff ??
@@ -30,4 +32,4 @@ app.post("/api/messages/new", (req, res) => {
 });
 
 // listeners
-app.listen(port, () => console.log(`Listeningfdf sfs on localhost: ${port}`));
+app.listen(port, () => console.log(`Listening on localhost: ${port}`));
