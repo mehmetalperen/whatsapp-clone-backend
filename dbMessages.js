@@ -7,4 +7,6 @@ const whatsappSchema = mongoose.Schema({
   received: Boolean,
 });
 
-export default mongoose.model("messageContent", whatsappSchema);
+// collection. We are watching this with pusher middleware we installed. whenever there is a change in this
+//collection, pusher will know
+export default mongoose.model("messagecontents", whatsappSchema);
